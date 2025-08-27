@@ -1,0 +1,69 @@
+:root {
+  --font-color: #213d52;
+  --font-color2: #fff;
+  --bc-color: #ec8468;
+}
+/*general*/
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("images/neon-tropical-monstera-leaf-banner.jpg");
+}
+
+/*calculator*/
+.calculator-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.calculator-wrapper {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  background-image: url("images/flat-lay-close-up-autumn-leaf.jpg");
+}
+
+.calculator-display {
+  background-color: white;
+  color: var(--font-color);
+  font-size: 2rem;
+  text-align: right;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8rem;
+}
+
+.calculator-buttons button {
+  background-color: white;
+  color: var(--font-color);
+  font-size: 1.2rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.calculator-buttons button:hover {
+  background-color: var(--bc-color);
+  color: var(--font-color2);
+}
+button.zero {
+  grid-column: span 2;
+}
